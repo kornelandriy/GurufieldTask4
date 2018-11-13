@@ -1,0 +1,11 @@
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.deps.json
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.pdb
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.csprojAssemblyReference.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.AssemblyInfoInputs.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.AssemblyInfo.cs
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.pdb
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.runtimeconfig.json
+C:\Users\Kornel\RiderProjects\GurufieldTask4\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.runtimeconfig.dev.json

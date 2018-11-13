@@ -3,20 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.DAL.Entities;
+using WebApp.DAL.Interfaces;
 
 namespace WebApplication.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
+        private IUnitOfWork _phoneRepository;
+        
         private static string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
+        public SampleDataController(IUnitOfWork phoneRepository)
+        {
+            _phoneRepository = phoneRepository;
+        }
+
         [HttpGet("[action]")]
         public IEnumerable<WeatherForecast> WeatherForecasts()
         {
+            var v = _phoneRepository.Phones.GetAll().ToList();
+            
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
