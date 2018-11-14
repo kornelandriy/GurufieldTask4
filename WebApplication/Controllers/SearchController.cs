@@ -13,10 +13,13 @@ namespace WebApplication.Controllers
         public SearchController(IUnitOfWork dbUnit) => _dbUnit = dbUnit;
 
         [HttpGet("[action]")]
-        public IEnumerable<string> Find(string str)
+        public IEnumerable<string> Find(string searchString)
         {
+            if (string.IsNullOrEmpty(searchString)) return null;
             return _dbUnit.Phones
-                .Find(item => item.Name.Contains(str))
+                .Find(item => item.Name
+                    .ToUpper()
+                    .Contains(searchString.ToUpper()))
                 .Select(phone => phone.Name)
                 .ToList();
         }

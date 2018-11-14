@@ -92,6 +92,35 @@
             <e p="rxjs" t="IncludeRecursive" />
             <e p="ts-node" t="IncludeRecursive" />
             <e p="tslint" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.dom.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.dom.iterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.collection.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.core.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.generator.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.iterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.promise.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.proxy.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.reflect.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.symbol.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.symbol.wellknown.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2016.array.include.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2016.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2016.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.intl.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.object.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.sharedmemory.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.string.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es5.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es6.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.asynciterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.scripthost.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.webworker.d.ts" t="IncludeRecursive" />
             <e p="zone.js" t="IncludeRecursive" />
           </e>
           <e p="package-lock.json" t="Include" />
@@ -104,23 +133,10 @@
               <e p="app.component.html" t="Include" />
               <e p="app.component.ts" t="Include" />
               <e p="app.module.ts" t="Include" />
-              <e p="counter" t="Include">
-                <e p="counter.component.html" t="Include" />
-                <e p="counter.component.spec.ts" t="Include" />
-                <e p="counter.component.ts" t="Include" />
-              </e>
-              <e p="fetch-data" t="Include">
-                <e p="fetch-data.component.html" t="Include" />
-                <e p="fetch-data.component.ts" t="Include" />
-              </e>
-              <e p="home" t="Include">
-                <e p="home.component.html" t="Include" />
-                <e p="home.component.ts" t="Include" />
-              </e>
-              <e p="nav-menu" t="Include">
-                <e p="nav-menu.component.css" t="Include" />
-                <e p="nav-menu.component.html" t="Include" />
-                <e p="nav-menu.component.ts" t="Include" />
+              <e p="search" t="Include">
+                <e p="search.component.css" t="Include" />
+                <e p="search.component.html" t="Include" />
+                <e p="search.component.ts" t="Include" />
               </e>
             </e>
             <e p="assets" t="Include">
