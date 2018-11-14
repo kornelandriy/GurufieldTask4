@@ -5,14 +5,14 @@ using WebApp.DAL.Interfaces;
 
 namespace WebApp.DAL.Repositories
 {
-    public class EfUnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly MobileContext _mobileContext;
-        private PhoneRepository _phoneRepository;
 
         private bool _disposed;
+        private PhoneRepository _phoneRepository;
 
-        public EfUnitOfWork(MobileContext mobileContext)
+        public UnitOfWork(MobileContext mobileContext)
         {
             _mobileContext = mobileContext;
             _phoneRepository = new PhoneRepository(mobileContext);
@@ -21,10 +21,7 @@ namespace WebApp.DAL.Repositories
         public IRepository<Phone> Phones =>
             _phoneRepository ?? (_phoneRepository = new PhoneRepository(_mobileContext));
 
-        public void Save()
-        {
-            _mobileContext.SaveChanges();
-        }
+        public void Save() => _mobileContext.SaveChanges();
 
         protected virtual void Dispose(bool disposing)
         {

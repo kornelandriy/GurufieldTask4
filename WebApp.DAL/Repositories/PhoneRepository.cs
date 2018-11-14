@@ -10,37 +10,19 @@ namespace WebApp.DAL.Repositories
 {
     public class PhoneRepository : IRepository<Phone>
     {
-        private MobileContext _mobileContext;
+        private readonly MobileContext _mobileContext;
  
-        public PhoneRepository(MobileContext context)
-        {
-            this._mobileContext = context;
-        }
+        public PhoneRepository(MobileContext context) => _mobileContext = context;
  
-        public IEnumerable<Phone> GetAll()
-        {
-            return _mobileContext.Phones;
-        }
+        public IEnumerable<Phone> GetAll() => _mobileContext.Phones;
  
-        public Phone Get(int id)
-        {
-            return _mobileContext.Phones.Find(id);
-        }
+        public Phone Get(int id) => _mobileContext.Phones.Find(id);
  
-        public void Create(Phone book)
-        {
-            _mobileContext.Phones.Add(book);
-        }
+        public void Create(Phone book) => _mobileContext.Phones.Add(book);
  
-        public void Update(Phone book)
-        {
-            _mobileContext.Entry(book).State = EntityState.Modified;
-        }
+        public void Update(Phone book) => _mobileContext.Entry(book).State = EntityState.Modified;
  
-        public IEnumerable<Phone> Find(Func<Phone, Boolean> predicate)
-        {
-            return _mobileContext.Phones.Where(predicate).ToList();
-        }
+        public IEnumerable<Phone> Find(Func<Phone, Boolean> predicate) => _mobileContext.Phones.Where(predicate).ToList();
  
         public void Delete(int id)
         {
