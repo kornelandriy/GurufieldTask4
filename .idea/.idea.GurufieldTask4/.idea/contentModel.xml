@@ -11,6 +11,7 @@
       <e p="WebApp.DAL" t="IncludeRecursive">
         <e p="Bin" t="ExcludeRecursive" />
         <e p="Context" t="Include">
+          <e p="DbInitialize.cs" t="Include" />
           <e p="MobileContext.cs" t="Include" />
         </e>
         <e p="Entities" t="Include">
@@ -24,8 +25,8 @@
           <e p="PhoneMap.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20181113232918_InitialCreate.cs" t="Include" />
-          <e p="20181113232918_InitialCreate.Designer.cs" t="Include" />
+          <e p="20181114172009_InitialCreate.cs" t="Include" />
+          <e p="20181114172009_InitialCreate.Designer.cs" t="Include" />
           <e p="MobileContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -142,7 +143,7 @@
           <e p="tslint.json" t="Include" />
         </e>
         <e p="Controllers" t="Include">
-          <e p="SampleDataController.cs" t="Include" />
+          <e p="SearchController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

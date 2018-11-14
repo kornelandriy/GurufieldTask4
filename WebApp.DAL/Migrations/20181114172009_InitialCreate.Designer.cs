@@ -9,7 +9,7 @@ using WebApp.DAL.Context;
 namespace WebApp.DAL.Migrations
 {
     [DbContext(typeof(MobileContext))]
-    [Migration("20181113232918_InitialCreate")]
+    [Migration("20181114172009_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

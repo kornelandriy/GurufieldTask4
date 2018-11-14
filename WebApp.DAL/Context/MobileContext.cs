@@ -6,16 +6,17 @@ namespace WebApp.DAL.Context
 {
     public class MobileContext : DbContext
     {
-        public DbSet<Phone> Phones { get; set; }
         public MobileContext(DbContextOptions<MobileContext> options) : base(options)
         {
-            Database.EnsureCreated();
+            DbInitialize.Seed(this);
         }
-        
-        protected override void OnModelCreating(ModelBuilder modelBuilder) 
-        { 
-            base.OnModelCreating(modelBuilder); 
-            new PhoneMap(modelBuilder.Entity<Phone>()); 
-        } 
+
+        public DbSet<Phone> Phones { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            new PhoneMap(modelBuilder.Entity<Phone>());
+        }
     }
 }

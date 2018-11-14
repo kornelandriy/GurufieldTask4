@@ -10,4 +10,8 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0-preview3-35497" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations" />
+    </ItemGroup>
+
 </Project>
