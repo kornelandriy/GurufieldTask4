@@ -150,7 +150,6 @@
             <e p="main.ts" t="Include" />
             <e p="polyfills.ts" t="Include" />
             <e p="styles.css" t="Include" />
-            <e p="test.ts" t="Include" />
             <e p="tsconfig.app.json" t="Include" />
             <e p="tsconfig.spec.json" t="Include" />
             <e p="typings.d.ts" t="Include" />

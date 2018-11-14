@@ -5,29 +5,40 @@ using WebApp.DAL.Interfaces;
 
 namespace WebApp.DAL.Repositories
 {
-        public class EfUnitOfWork : IUnitOfWork
+    public class EfUnitOfWork : IUnitOfWork
+    {
+        private readonly MobileContext _mobileContext;
+        private PhoneRepository _phoneRepository;
+
+        private bool _disposed;
+
+        public EfUnitOfWork(MobileContext mobileContext)
         {
-            private readonly MobileContext _mobileContext;
-            private PhoneRepository _phoneRepository;
+            _mobileContext = mobileContext;
+            _phoneRepository = new PhoneRepository(mobileContext);
+        }
 
-            public EfUnitOfWork(MobileContext mobileContext)
+        public IRepository<Phone> Phones =>
+            _phoneRepository ?? (_phoneRepository = new PhoneRepository(_mobileContext));
+
+        public void Save()
+        {
+            _mobileContext.SaveChanges();
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
             {
-                _mobileContext = mobileContext;
-                _phoneRepository = new PhoneRepository(mobileContext);
-            }
-
-            public IRepository<Phone> Phones =>
-                _phoneRepository ?? (_phoneRepository = new PhoneRepository(_mobileContext));
-
-            public void Save()
-            {
-                _mobileContext.SaveChanges();
-            }
-
-            public void Dispose()
-            {
-                _mobileContext.Dispose();
-                GC.SuppressFinalize(this);
+                if (disposing) _mobileContext.Dispose();
+                _disposed = true;
             }
         }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+    }
 }
